@@ -2,7 +2,7 @@ const InputBox = document.getElementById("InputBox");
 const list_container = document.getElementById("list_container");
 
 function AddTask(){
-    if(InputBox.value === ''){
+    if(InputBox.value.trim() === ""){
         alert("Please write something inside the input field");
     } else{
         let li = document.createElement("li");
@@ -31,6 +31,7 @@ list_container.addEventListener("click", function(e){
         SaveData();
     }
 }, false);
+
 function SaveData(){
 localStorage.setItem("data", list_container.innerHTML);
 }
