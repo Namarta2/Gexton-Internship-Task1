@@ -44,6 +44,10 @@ button:hover{
     background: #6D28D9
 }
 
+button:last-child{
+    margin-top:15px;
+}
+
 ul{
     list-style: none;
     padding: 0;
@@ -59,4 +63,24 @@ li{
     margin-bottom: 10px;
     background: #F5F3FF;
     border-radius: 5px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.checked{
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+
+.task-text.checked {
+    text-decoration: line-through;
+}
+
+.task-text.deleted {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
 }
